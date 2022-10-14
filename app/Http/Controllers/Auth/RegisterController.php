@@ -84,7 +84,7 @@ class RegisterController extends Controller
             'gender'=> $data['gender'],
             'address'=> $data['address'],
             'country'=> $data['country'],
-            'dob'=> Carbon::parse($data['dob']),
+            'dob'=> $data['dob'],
             'subscribe'=> $data['subscribe'],
             'terms'=> $data['terms']
         ];

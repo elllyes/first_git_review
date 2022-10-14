@@ -73,7 +73,6 @@ class UserController extends Controller
             'subscribe'=> ['boolean'],
 
         ]);
-         $attributes['dob'] = Carbon::parse($attributes['dob']);
          $user->updateOrFail($attributes);
          
         return view('/updated');

@@ -4,7 +4,7 @@
     <label for="{{$name}}" class="col-md-4 col-form-label text-md-end">{{$label}}</label>
         <div class="col-md-6">
             <div class="d-flex flex-wrap align-items-center">
-                <input type="{{$type}}" name="{{$name}}" class = "form-control" id = "{{$name}}" value="{{$value}}"  placeholder = "dd/mm/yyyy" required/>
+            <input type="{{$type}}" name="{{$name}}" class = "form-control" id = "{{$name}}" value="{{$value}}"  placeholder = "dd/mm/yyyy" required readonly/>
                 <i for ="dob" class="glyphicon glyphicon-calendar" style="margin-left:-30px" id="calendar"></i>
                 @error($name)
                     <span class="invalid-feedback" role="alert">
@@ -20,15 +20,13 @@
 <script>
                         $( function() {
                             $( "#{{$name}}" ).datepicker({
-                                altFormat: "dd-mm-yy",
-                                dateFormat: "dd-mm-yy",
+                                altFormat: "dd/mm/yy",
+                                dateFormat: "dd/mm/yy",
                                 yearRange: "1930:2080",
-                                buttonImageOnly: true,
                                 changeMonth: true,
                                 changeYear: true,
                                 constrainInput: false,
                                 showAnim: "fadeIn"
                             });
-                            // var widget = $( "#{{$name}}" ).datepicker( "widget" );
                             });
                     </script>
