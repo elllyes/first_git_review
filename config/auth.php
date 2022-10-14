@@ -64,10 +64,10 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-        'countries' =>[
-            'driver' => 'eloquent',
-            'model' => App\Models\Countries::class,
-        ],
+        // 'countries' =>[
+        //     'driver' => 'eloquent',
+        //     'model' => App\Models\Countries::class,
+        // ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',

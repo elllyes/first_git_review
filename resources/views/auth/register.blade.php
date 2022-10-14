@@ -13,7 +13,6 @@
                         
                         <x-commonRegister/>
                         <x-common-password/>
-                        <x-countrieskhabsa name="country" label="Country" type="text" value="{{ old('country') }}"/>
                         <x-common-under-passReg/>            
 
                         <div class="row mb-0">

@@ -11,6 +11,7 @@ class countryController extends Controller
     {
         // return view('register',['countries'=> Countries::all()])->request();
        // return $countries = Countries::all());
-       return view ('/auth.register', ['countries'=> Country::all()]);
+
+       return view  ['countries'=> Country::all()]);
     }
 }

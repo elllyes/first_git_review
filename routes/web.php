@@ -35,6 +35,6 @@ Route::get('/admin/users/{user}/edit-password', [ResetPasswordController::class,
 Route::patch('/admin/users/edit-password/{user}', [ResetPasswordController::class, 'updatePassword'])->middleware('admin');
 
 
-Route::get('/auth.register',[countryController::class, 'showCountry']);
+//Route::get('/auth.register',[countryController::class, 'showCountry']);
  
 
