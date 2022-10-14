@@ -60,9 +60,9 @@ class RegisterController extends Controller
             'gender'=> ['string','required'],
             'address'=> ['present'],
             'country'=> ['string'],
-            'dob'=> ['required','date'],
-            'subscribe'=> ['boolean'],
-            'terms'=> ['boolean', 'required']
+            'dob'=> ['required'],
+            // 'subscribe'=> ['boolean'],
+            // 'terms'=> ['boolean', 'required']
         ]);
     }
 
